@@ -14,7 +14,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```shell
-ember install ember-ag-grid
+ember install @frontend-ninjas/ember-ag-grid
 ```
 
 Usage
