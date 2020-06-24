@@ -1,3 +1,6 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Welcome to Ag Grid wrapper for ember</h2>
 
-{{outlet}}
+<AgGrid 
+  class="ag-theme-balham"
+  @columnDefs={{this.columnDefs}}
+  @rowData={{this.rowData}} />

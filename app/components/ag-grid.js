@@ -1,0 +1,1 @@
+export { default } from 'ember-ag-grid/components/ag-grid';
