@@ -1,4 +1,4 @@
-ember-ag-grid
+ember-table-ag-grid
 ==============================================================================
 
 This is a simple AG-Grid wrapper component.
