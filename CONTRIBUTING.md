@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd ember-ag-grid`
+* `cd ember-table-ag-grid`
 * `npm install`
 
 ## Linting
