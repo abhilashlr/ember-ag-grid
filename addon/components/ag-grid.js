@@ -4,7 +4,8 @@ import { action } from '@ember/object';
 export default class AgGridComponent extends Component {
 	gridOptions = {
 		columnDefs: this.args.columnDefs,
-		rowData: this.args.rowData
+		rowData: this.args.rowData,
+		...this.args.additionalParameters
 	};
 
 	@action
