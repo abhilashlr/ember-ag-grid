@@ -14,9 +14,6 @@ export default class AgGridComponent extends Component {
 	@action
 	async initializeGrid(elem) {
 		let { Grid } = await import('ag-grid-community');
-
-		const { environment, modulePrefix } = config;
-		console.log("ENV " , environment );
 		new Grid(elem, this.gridOptions);
 	}
 }
