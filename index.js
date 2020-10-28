@@ -24,8 +24,8 @@ module.exports = {
     this._super.included.apply(this, arguments);
 
     // TODO:: Move this to import based styles for scss related imports.
-    app.import('node_modules/ag-grid-community/dist/styles/ag-grid.min.css');
-    app.import('node_modules/ag-grid-community/dist/styles/ag-theme-balham.min.css');
+    app.import('node_modules/ag-grid-enterprise/dist/styles/ag-grid.min.css');
+    app.import('node_modules/ag-grid-enterprise/dist/styles/ag-theme-balham.min.css');
   },
 
   _hasSassOrLessInstalledInApp() {

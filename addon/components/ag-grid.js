@@ -1,6 +1,5 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
-import config from 'ember-get-config';
 
 
 export default class AgGridComponent extends Component {
@@ -13,7 +12,8 @@ export default class AgGridComponent extends Component {
 
 	@action
 	async initializeGrid(elem) {
-		let { Grid } = await import('ag-grid-community');
+		let { Grid } = await import('ag-grid-enterprise');
+
 		new Grid(elem, this.gridOptions);
 	}
 }
