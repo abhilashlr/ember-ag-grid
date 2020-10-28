@@ -14,10 +14,13 @@ export default class AgGridComponent extends Component {
 	@action
 	async initializeGrid(elem) {
 		let { Grid } = await import('ag-grid-community');
-		let {LicenseManager} = await import ('@ag-grid-enterprise/core');
-		const { environment, modulePrefix } = config;
+		const {agGrid} = config;
 
-		console.log("ENVIRONMENT " , environment );
+		if(agGrid && agGrid.licenseKey) {
+			let {LicenseManager} = await import ('ag-grid-enterprise');
+			LicenseManager.setLicenseKey(agGrid.licenseKey);
+		}
+
 		new Grid(elem, this.gridOptions);
 	}
 }
