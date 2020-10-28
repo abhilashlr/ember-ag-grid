@@ -23,6 +23,7 @@
     "test:ember-compatibility": "ember try:each"
   },
   "dependencies": {
+    "ag-grid-community": "^24.1.0",
     "ag-grid-enterprise": "^24.1.0",
     "css-loader": "^3.6.0",
     "ember-auto-import": "^1.5.3",
