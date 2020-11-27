@@ -34,6 +34,14 @@ rowData = [
   {make: 'Ford', model: 'Mondeo', price: 32000},
   {make: 'Porsche', model: 'Boxter', price: 72000}
 ];
+
+//Optional parameters to pass to AG Grid
+additionalParameters = {
+  defaultColumnDef: {
+    sortable: true,
+    filter: true
+  }
+};
 ```
 
 ```hbs
